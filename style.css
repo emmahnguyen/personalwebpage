@@ -1,0 +1,119 @@
+body {
+    font-family: Lucida Handwriting;
+    background-color: mistyrose;
+    margin: 0;
+    padding: 0;
+}
+header {
+    font-family: Algerian;
+    background-color: lightblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+img {
+    width: 200px;
+    border-radius: 50%;
+}
+.content {
+    background-color: white;
+    color: palevioletred;
+    padding: 20px;
+    margin-top: 20px;
+    border: ridge lightblue;
+    animation: fadeIn 2s ease-in-out;
+}
+a {
+    color: lightblue;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+a:hover {
+    color: darkblue;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.chatbox {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    background: white;
+    border: 2px solid lightblue;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+}
+.chatbox-header {
+    background: lightblue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+.chatbox-body {
+    padding: 10px;
+    overflow-y: auto;
+    height: 250px;
+}
+.chatbox-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid lightblue;
+}
+.chatbox-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    outline: none;
+}
+.chatbox-input button {
+    background: lightblue;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.chatbox-input button:hover {
+    background: darkblue;
+}
+.message {
+    margin-bottom: 10px;
+}
+.message.user {
+    text-align: right;
+    color: darkblue;
+}
+.message.bot {
+    text-align: left;
+    color: palevioletred;
+}
+#toggleChatBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: lightblue;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+}
+#toggleChatBtn:hover {
+    background: darkblue;
+}

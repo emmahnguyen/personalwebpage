@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Welcome to My Personal Page</h1>
+</header>
+
+<div class="container">
+    <div class="content">
+        <h2>ABOUT ME</h2>
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQG_EZDg4HKLuA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725984100141?e=1738195200&v=beta&t=gF4w6PvffiMdpskMZTz0daJuqKrlrrxr4MLgqiGP1rY" alt="My Picture">
+        <p>Hello! My name is Emma Nguyen, with Computer Science major at the University of Houston Downtown. I am passionate about turning innovative ideas into real solutions...</p>
+        <p><a href="https://www.linkedin.com/in/emma-nguyen-84245929a/">Connect with me on LinkedIn</a></p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="projects">
+        <h2>MY PROJECTS</h2>
+        <ul>
+            <li><strong>Shopping App:</strong> Developed using HTML, CSS, JavaScript, and C++.</li>
+            <li><strong>Web Design:</strong> Designed websites by using Canva and WIX.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="container">
+    <h2>CONTACT ME</h2>
+    <p>Please put your name, email, and questions so that I can contact you.</p>
+    <form method="post" autocomplete="on">
+        <p><label>First Name:
+            <input type="text" id="firstName" placeholder="First name" />
+        </label></p>
+        <p><label>Last Name:
+            <input type="text" id="lastName" placeholder="Last name" />
+        </label></p>
+        <p><label>Email:
+            <input type="email" id="email" placeholder="name@domain.com" />
+        </label></p>
+        <p><label>Question about Programming:
+            <input type="text" id="question" placeholder="Question" />
+        </label></p>
+        <p><input type="submit" value="Submit" />
+        <input type="reset" value="Clear" /></p>
+    </form>
+</div>
+
+<!-- Chatbox -->
+<div class="chatbox" id="chatbox">
+    <div class="chatbox-header">
+        <span>Chat with Me!</span>
+        <button onclick="toggleChat()">✖</button>
+    </div>
+    <div class="chatbox-body" id="chatboxBody"></div>
+    <div class="chatbox-input">
+        <input type="text" id="chatInput" placeholder="Type your message..." />
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<!-- Toggle Button -->
+<button id="toggleChatBtn" onclick="toggleChat()">Chat with Me</button>
+
+<script src="script.js"></script>
+</body>
+</html>
